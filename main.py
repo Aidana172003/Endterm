@@ -8,7 +8,7 @@ apple=randrange(size,res-size,size), randrange(size,res-size,size)
 length=1
 snake=[(x,y)]
 dx,dy=0,0
-fps=60
+FPS=60
 dirs={'W':True,'S':True, 'A':True,'D':True,}
 score=0
 speed_count=0
@@ -53,7 +53,7 @@ while True:
             close_game() 
 
     pygame.display.flip()
-    clock.tick(fps)
+    clock.tick(FPS)
     close_game()
 
     key=pygame.key.get_pressed()
